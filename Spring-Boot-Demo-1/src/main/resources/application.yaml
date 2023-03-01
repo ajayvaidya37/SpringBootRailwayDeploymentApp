@@ -1,0 +1,67 @@
+#server:
+#  port: 8082
+
+#spring:
+#  profiles:
+#    active: qa
+
+---
+
+spring:
+#  config:
+#    activate:
+#      on-profile: dev
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    password: fYNQgtHW7mPRRxZ910Rq
+    url: jdbc:mysql://containers-us-west-154.railway.app:7538/railway
+    username: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+frontpage:
+  message: Hello welcome to my webiste, Developer - Ajay Vaidya!!
+
+---
+
+spring:
+  config: 
+    activate: 
+      on-profile: qa
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    password: Ajay@123
+    url: jdbc:mysql://localhost:3306/springbootapp1qa
+    username: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+frontpage:
+  message: Hello welcome to my webiste, Developer - Ajay Vaidya!!
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+        exclude: "env,beans"
+
+---
+
+spring:
+  config:
+    activate:
+      on-profile: prod
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    password: Ajay@123
+    url: jdbc:mysql://localhost:3306/springbootapp1prod
+    username: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+frontpage: 
+  message: Hello welcome to my webiste, Developer - Ajay Vaidya!!
