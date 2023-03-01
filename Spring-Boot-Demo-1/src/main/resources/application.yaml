@@ -7,10 +7,11 @@
 
 ---
 
-spring:
+#spring:
 #  config:
 #    activate:
 #      on-profile: dev
+spring:
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
     password: rWOndnrPLO50PP56hxJU
@@ -24,29 +25,29 @@ frontpage:
   message: Hello welcome to my webiste, Developer - Ajay Vaidya!!
 
 ---
-
-spring:
-  config: 
-    activate: 
-      on-profile: qa
-  datasource:
-    driver-class-name: com.mysql.jdbc.Driver
-    password: Ajay@123
-    url: jdbc:mysql://localhost:3306/springbootapp1qa
-    username: root
-  jpa:
-    hibernate:
-      ddl-auto: update
-    show-sql: true
-frontpage:
-  message: Hello welcome to my webiste, Developer - Ajay Vaidya!!
-
-management:
-  endpoints:
-    web:
-      exposure:
-        include: "*"
-        exclude: "env,beans"
+#
+#spring:
+#  config: 
+#    activate: 
+#      on-profile: qa
+#  datasource:
+#    driver-class-name: com.mysql.jdbc.Driver
+#    password: Ajay@123
+#    url: jdbc:mysql://localhost:3306/springbootapp1qa
+#    username: root
+#  jpa:
+#    hibernate:
+#      ddl-auto: update
+#    show-sql: true
+#frontpage:
+#  message: Hello welcome to my webiste, Developer - Ajay Vaidya!!
+#
+#management:
+#  endpoints:
+#    web:
+#      exposure:
+#        include: "*"
+#        exclude: "env,beans"
 
 ---
 
