@@ -13,8 +13,8 @@ spring:
 #      on-profile: dev
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
-    password: fYNQgtHW7mPRRxZ910Rq
-    url: jdbc:mysql://containers-us-west-154.railway.app:7538/railway
+    password: rWOndnrPLO50PP56hxJU
+    url: jdbc:mysql://containers-us-west-39.railway.app:5792/railway
     username: root
   jpa:
     hibernate:
